@@ -1,14 +1,28 @@
-# AgentOS
+<p align="center">
+  <img src="./assets/logo-wordmark.svg" alt="AgentOS" width="600">
+</p>
 
-### The first native Ring-0 Operating System built exclusively for the AI era.
+<p align="center">
+  <strong>The first native Ring-0 Operating System built exclusively for the AI era.</strong>
+</p>
 
-**Executing a 1.7B parameter LLM directly on bare metal (x86_64 & Apple Silicon HVF) with zero host OS overhead.**
+<p align="center">
+  Executing a 1.7B parameter LLM directly on bare metal (x86_64 &amp; Apple Silicon HVF) with zero host OS overhead.
+</p>
 
-[![License: AGPLv3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Stage](https://img.shields.io/badge/Stage-11_Boot--LLM_Operational-brightgreen)]()
-[![Cross-Platform](https://img.shields.io/badge/Targets-x86__64_%2B_aarch64-orange)]()
-[![Tests](https://img.shields.io/badge/Tests-643_passing-success)]()
-[![Warnings](https://img.shields.io/badge/Build_Warnings-0-success)]()
+<p align="center">
+  <a href="https://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg" alt="License: AGPLv3"></a>
+  <img src="https://img.shields.io/badge/Stage-11_Boot--LLM_Operational-brightgreen" alt="Stage 11">
+  <img src="https://img.shields.io/badge/Targets-x86__64_%2B_aarch64-orange" alt="Cross-Platform">
+  <img src="https://img.shields.io/badge/Tests-643_passing-success" alt="Tests">
+  <img src="https://img.shields.io/badge/Build_Warnings-0-success" alt="Warnings">
+</p>
+
+---
+
+<p align="center">
+  <img src="./assets/hero-banner.svg" alt="AgentOS — Single Ring-0 address space containing the Boot-LLM, Validator, and Sandboxes" width="100%">
+</p>
 
 ---
 
@@ -18,7 +32,7 @@
 
 ---
 
-## 🔓 AgentOS is Open Source
+## AgentOS is Open Source
 
 > The full source code of the kernel will be published to this repository under the **AGPLv3** license. Until then, early source access is restricted to select **design partners and core contributors**.
 >
@@ -46,47 +60,62 @@ This is not a roadmap. This is **shipped code**.
 
 | Capability | Status |
 |---|---|
-| **Ring-0 Boot-LLM** (Qwen3-1.7B Q4_K_M) | ✅ Executing a 1.7B parameter LLM directly on bare metal |
-| **Cross-Platform Determinism** | ✅ Bit-exact deterministic output on x86_64 and aarch64 |
-| **Apple Silicon HVF Acceleration** | ✅ Native ARM64 boot, hardware-accelerated |
-| **Unikernel Architecture** | ✅ Single Ring-0 address space, zero syscall overhead |
-| **AgentLang Validator** | ✅ Type-safe code execution, 270+ tests |
-| **AOT Compilation** | ✅ Native x86_64 codegen, no JIT overhead |
-| **Zero-Copy Handles** | ✅ Capability-typed inter-component IPC |
-| **Arena Allocators** | ✅ O(1) bump-pointer, no free-list heap in Ring-0 |
+| **Ring-0 Boot-LLM** (Qwen3-1.7B Q4_K_M) | Executing a 1.7B parameter LLM directly on bare metal |
+| **Cross-Platform Determinism** | Bit-exact deterministic output on x86_64 and aarch64 |
+| **Apple Silicon HVF Acceleration** | Native ARM64 boot, hardware-accelerated |
+| **Unikernel Architecture** | Single Ring-0 address space, zero syscall overhead |
+| **AgentLang Validator** | Type-safe code execution, 270+ tests |
+| **AOT Compilation** | Native x86_64 codegen, no JIT overhead |
+| **Zero-Copy Handles** | Capability-typed inter-component IPC |
+| **Arena Allocators** | O(1) bump-pointer, no free-list heap in Ring-0 |
 
 ---
 
-## The Architecture in One Picture
+## The Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   AgentOS (Single Ring-0 Address Space)     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   ┌─────────────┐    ┌──────────────┐    ┌──────────────┐  │
-│   │  Boot-LLM   │    │   Validator  │    │   Sandboxes  │  │
-│   │ (Qwen3 1.7B)│◄──►│  (Ring-0)    │◄──►│  (Capability)│  │
-│   └─────────────┘    └──────────────┘    └──────────────┘  │
-│         ▲                   ▲                    ▲         │
-│         │                   │                    │         │
-│         └─────── Zero-Copy Handle IPC ──────────┘         │
-│                                                             │
-│   ┌─────────────────────────────────────────────────────┐  │
-│   │     HAL — Platform-Native Implementation            │  │
-│   │     ┌──────────────┐    ┌──────────────┐            │  │
-│   │     │   x86_64     │    │   aarch64    │            │  │
-│   │     │ (PML4, GDT)  │    │ (TTBR1, GIC) │            │  │
-│   │     └──────────────┘    └──────────────┘            │  │
-│   └─────────────────────────────────────────────────────┘  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-              Bare Metal — No Host OS — No Hypervisor
-```
+<p align="center">
+  <img src="./assets/architecture.svg" alt="AgentOS architecture: Boot-LLM, Validator, and Sandboxes in a single Ring-0 address space, sitting on a HAL with native x86_64 and aarch64 implementations on bare metal" width="100%">
+</p>
 
 **No User-Space.** **No Kernel-Space split.** **No Process Boundaries.** **No Syscalls.**
 
 Safety enforced by the **Validator** and the **type system**, not by hardware page tables.
+
+---
+
+## A Glimpse of the Future — Stage 14 Dual Desktop
+
+<p align="center">
+  <img src="./assets/desktop-mockup.svg" alt="AgentOS Stage 14 Dual Desktop UI mockup showing classical user desktop alongside the live Agent Desktop with active sandboxes, AgentLang decoder, and reasoning trace" width="100%">
+</p>
+
+The classical user desktop runs alongside the **Agent Desktop** — live visualization of running agents, their state, their reasoning, in human-readable form. Every agent intent is decoded into language a human can read and audit. **Pillar 2: Human Oversight** is operationalized at the OS level.
+
+---
+
+## The Long Arc — Roadmap
+
+<p align="center">
+  <img src="./assets/roadmap.svg" alt="AgentOS roadmap from Stage 11 Boot-LLM through Stage 24+ Pure-AgentLang Kernel" width="100%">
+</p>
+
+We are at **Stage 11** today. Boot-LLM operational, cross-platform deterministic. **Stage 11 Closure** is active: the first complete AI sentence rendered on bare metal. After that: Sandboxing + AgentLang Migration begins (Stage 12), MCP Integration (13), Dual Desktop (14), VM-Hosting (16), and ultimately the Pure-AgentLang Kernel at Stage 24+.
+
+We do not build fast. We build correctly. The discipline that delivered Stage 11 with zero reverts is the discipline that gets us to Stage 24.
+
+---
+
+## Free for Everyone
+
+<p align="center">
+  <img src="./assets/business-model.svg" alt="AgentOS editions and services — free for everyone with optional editions for those who need more" width="100%">
+</p>
+
+**The kernel is free, and stays free.** AgentOS Basic for the everyday citizen, AgentOS Hardcore for builders and hackers — both AGPLv3, both forever.
+
+For those who need more — premium intelligence, certified compliance builds for regulated industries, sovereign cloud reasoning — we offer optional editions and services. **These exist so we can keep the kernel free for everyone else.**
+
+Partnership inquiries: **Tom.Stuhl@nefesh.ai**
 
 ---
 
@@ -100,50 +129,17 @@ If you're an investor, builder, or visionary who wants the philosophy behind why
 
 ---
 
-## Roadmap Highlights
-
-We are at **Stage 11 (Phase 4 — Boot-LLM)**. Ahead of us:
-
-- **Stage 11 Closure:** First complete AI sentence rendered cross-platform — *"Hello World... I'm the first AI"* — bit-exact deterministic on bare metal.
-- **Stage 12 (Sandboxing + AgentLang Kernel Migration):** First AgentLang-native kernel subsystem. The Rust detour begins to be reclaimed.
-- **Stage 13 (MCP Integration):** External AI agents (Claude, GPT, Gemini) connect to AgentOS sandboxes via the Model Context Protocol.
-- **Stage 14 (Dual Desktop):** Classical user desktop alongside the **Agent Desktop** — live visualization of autonomous agents, their state, their reasoning, in human-readable form.
-- **Stage 16 (VM-Hosting):** Linux and Windows as guests inside AgentOS — for adoption without abandonment.
-- **Stage 17+ (LLM-Management UI, Sandbox-to-Host Promotion, Hot-Swap, Native LLM Training):** The mature platform.
-- **Stage 24+ (Pure-AgentLang Kernel):** End-state of incremental migration. Zero Rust. Zero legacy.
-
----
-
-## Future Capabilities (Open-Core Strategy)
-
-AgentOS is **AGPLv3 open-core**. The kernel, the inference engine, the validator, the AOT compiler — all open. Forever.
-
-On top of that foundation, we're building commercial offerings for organizations whose use cases demand more than open-source can provide:
-
-### 🏥 AgentOS Enterprise Edition
-For **regulated industries** — hospitals, critical infrastructure (KRITIS), government, financial services. Full data sovereignty: every byte of patient data, every transaction, every classified document stays on-premises. The LLM runs locally. The agents run locally. Nothing leaves the building. **Compliance is structural, not bolted-on.**
-
-### 🧠 AgentOSLLM Hybrid (Premium)
-The local Ring-0 LLM coordinates with a server-side **AgentOSLLM Cloud Brain** — a fine-tuned orchestration model that augments local inference with cross-session reasoning, multi-agent coordination, and access to specialized models. Local sovereignty when you need it. Cloud horsepower when you don't.
-
-### 🏛 AgentOSLLM v2 (Native, Federated)
-The next generation: a foundation model trained on **opt-in user data with full consent**, anonymized on-device, federated learning by default. The first LLM that is **architecturally GDPR-compliant**, not retrofitted to be.
-
-These commercial layers fund the open-source foundation. Forever.
-
----
-
 ## Get Involved
 
-🏗️ **Builders:** If you want to contribute at the kernel level, email **Tom.Stuhl@nefesh.ai**. Selected contributors receive access to the full architecture specification.
+**Builders:** If you want to contribute at the kernel level, email **Tom.Stuhl@nefesh.ai**. Selected contributors receive access to the full architecture specification.
 
-📈 **Investors:** Email **Tom.Stuhl@nefesh.ai**. We are pre-seed and we know exactly what we're building. The deck is the code.
+**Investors:** Email **Tom.Stuhl@nefesh.ai**. We are pre-seed and we know exactly what we're building. The deck is the code.
 
-🌍 **Visionaries:** [Read the Manifesto](MANIFESTO.md). If it resonates, share it.
+**Visionaries:** [Read the Manifesto](MANIFESTO.md). If it resonates, share it.
 
-📰 **Press / Analysts:** Email **Tom.Stuhl@nefesh.ai** for technical briefings, demo access, and architectural review materials.
+**Press / Analysts:** Email **Tom.Stuhl@nefesh.ai** for technical briefings, demo access, and architectural review materials.
 
-🏛 **Enterprise Partners:** Email **Tom.Stuhl@nefesh.ai** for early access to AgentOS Enterprise Edition design partnerships.
+**Enterprise Partners:** Email **Tom.Stuhl@nefesh.ai** for early access to AgentOS Certified Editions design partnerships.
 
 ---
 

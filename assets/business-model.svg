@@ -1,0 +1,75 @@
+<svg width="100%" viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AgentOS public editions and services</title>
+<desc>AgentOS free forever as foundation with two editions and optional services for specialized needs</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<style>
+.t-th { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; font-weight: 500; }
+.t-ts { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
+.gray-fill { fill: #F1EFE8; stroke: #888780; }
+.coral-fill { fill: #FAECE7; stroke: #993C1D; }
+.purple-fill { fill: #EEEDFE; stroke: #534AB7; }
+.teal-fill { fill: #E1F5EE; stroke: #0F6E56; }
+@media (prefers-color-scheme: dark) {
+.gray-fill { fill: #2C2C2A; stroke: #B4B2A9; }
+.coral-fill { fill: #4A1B0C; stroke: #F5C4B3; }
+.purple-fill { fill: #26215C; stroke: #AFA9EC; }
+.teal-fill { fill: #04342C; stroke: #5DCAA5; }
+.t-primary-text { fill: #F1EFE8 !important; }
+.t-secondary-text { fill: #D3D1C7 !important; }
+.t-coral-light { fill: #F5C4B3 !important; }
+.t-coral-mid { fill: #F0997B !important; }
+.t-purple-light { fill: #AFA9EC !important; }
+.t-purple-mid { fill: #CECBF6 !important; }
+.t-teal-light { fill: #5DCAA5 !important; }
+.t-teal-mid { fill: #9FE1CB !important; }
+.t-gray-mid { fill: #B4B2A9 !important; }
+}
+</style>
+</defs>
+<text class="t-ts" x="40" y="36" fill="#888780" style="font-size: 11px; letter-spacing: 1px; font-weight: 500;">FREE FOR EVERYONE</text>
+<rect x="40" y="56" width="600" height="160" rx="12" fill="none" stroke="#888780" stroke-width="0.5" stroke-dasharray="4 4"/>
+<text class="t-th" x="340" y="86" text-anchor="middle" fill="#2C2C2A" style="font-size: 18px; font-weight: 500;">AgentOS</text>
+<text class="t-ts" x="340" y="106" text-anchor="middle" fill="#5F5E5A">AGPLv3 · Open Source · Free for every citizen, every builder, forever</text>
+<rect x="80" y="130" width="260" height="68" rx="8" class="gray-fill" stroke-width="0.5"/>
+<text class="t-th" x="210" y="156" text-anchor="middle" fill="#2C2C2A">AgentOS Basic</text>
+<text class="t-ts" x="210" y="174" text-anchor="middle" fill="#5F5E5A">For the everyday citizen</text>
+<text class="t-ts" x="210" y="190" text-anchor="middle" fill="#5F5E5A">Pre-configured, ready to run</text>
+<rect x="360" y="130" width="260" height="68" rx="8" class="gray-fill" stroke-width="0.5"/>
+<text class="t-th" x="490" y="156" text-anchor="middle" fill="#2C2C2A">AgentOS Hardcore</text>
+<text class="t-ts" x="490" y="174" text-anchor="middle" fill="#5F5E5A">For builders and hackers</text>
+<text class="t-ts" x="490" y="190" text-anchor="middle" fill="#5F5E5A">Stripped-down, build your own</text>
+<line x1="340" y1="220" x2="340" y2="248" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+<text class="t-ts" x="40" y="270" fill="#888780" style="font-size: 11px; letter-spacing: 1px; font-weight: 500;">FOR THOSE WHO NEED MORE</text>
+<rect x="40" y="290" width="195" height="160" rx="10" class="coral-fill" stroke-width="0.5"/>
+<text class="t-th" x="138" y="320" text-anchor="middle" fill="#4A1B0C" style="font-size: 15px; font-weight: 500;">AgentOSLLM Pro</text>
+<text class="t-ts" x="138" y="338" text-anchor="middle" fill="#712B13">Premium intelligence</text>
+<line x1="60" y1="354" x2="215" y2="354" stroke="#993C1D" stroke-width="0.5" stroke-dasharray="2 3"/>
+<text class="t-ts" x="138" y="378" text-anchor="middle" fill="#712B13">Optional drop-in upgrade</text>
+<text class="t-ts" x="138" y="396" text-anchor="middle" fill="#712B13">for the local Ring-0 LLM</text>
+<text class="t-ts" x="138" y="414" text-anchor="middle" fill="#712B13">in your AgentOS install</text>
+<text class="t-ts" x="138" y="436" text-anchor="middle" fill="#993C1D" style="font-weight: 500; letter-spacing: 0.5px;">FOR POWER USERS</text>
+<rect x="245" y="290" width="195" height="160" rx="10" class="purple-fill" stroke-width="0.5"/>
+<text class="t-th" x="343" y="320" text-anchor="middle" fill="#26215C" style="font-size: 15px; font-weight: 500;">Certified Editions</text>
+<text class="t-ts" x="343" y="338" text-anchor="middle" fill="#3C3489">Compliance-ready builds</text>
+<line x1="265" y1="354" x2="420" y2="354" stroke="#534AB7" stroke-width="0.5" stroke-dasharray="2 3"/>
+<text class="t-ts" x="343" y="378" text-anchor="middle" fill="#3C3489">For hospitals, government,</text>
+<text class="t-ts" x="343" y="396" text-anchor="middle" fill="#3C3489">defense, and KRITIS</text>
+<text class="t-ts" x="343" y="414" text-anchor="middle" fill="#3C3489">infrastructure operators</text>
+<text class="t-ts" x="343" y="436" text-anchor="middle" fill="#534AB7" style="font-weight: 500; letter-spacing: 0.5px;">FOR REGULATED INDUSTRIES</text>
+<rect x="450" y="290" width="190" height="160" rx="10" class="teal-fill" stroke-width="0.5"/>
+<text class="t-th" x="545" y="320" text-anchor="middle" fill="#04342C" style="font-size: 15px; font-weight: 500;">AgentOSLLM Cloud</text>
+<text class="t-ts" x="545" y="338" text-anchor="middle" fill="#085041">Sovereign cloud brain</text>
+<line x1="470" y1="354" x2="620" y2="354" stroke="#0F6E56" stroke-width="0.5" stroke-dasharray="2 3"/>
+<text class="t-ts" x="545" y="378" text-anchor="middle" fill="#085041">Frontier-scale reasoning</text>
+<text class="t-ts" x="545" y="396" text-anchor="middle" fill="#085041">when local isn't enough.</text>
+<text class="t-ts" x="545" y="414" text-anchor="middle" fill="#085041">Cloud horsepower, your terms</text>
+<text class="t-ts" x="545" y="436" text-anchor="middle" fill="#0F6E56" style="font-weight: 500; letter-spacing: 0.5px;">FOR HEAVY WORKLOADS</text>
+<line x1="40" y1="478" x2="640" y2="478" stroke="#D3D1C7" stroke-width="0.5"/>
+<text class="t-ts" x="340" y="504" text-anchor="middle" fill="#2C2C2A" style="font-weight: 500; font-size: 13px;">The kernel is free, and stays free.</text>
+<text class="t-ts" x="340" y="524" text-anchor="middle" fill="#5F5E5A">These editions and services exist so we can keep it that way</text>
+<text class="t-ts" x="340" y="540" text-anchor="middle" fill="#5F5E5A">— and so the people who need more, get more.</text>
+<text class="t-ts" x="340" y="566" text-anchor="middle" fill="#888780" style="font-size: 11px;">Partnership inquiries — Tom.Stuhl@nefesh.ai</text>
+</svg>

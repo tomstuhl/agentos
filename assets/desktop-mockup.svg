@@ -1,0 +1,140 @@
+<svg width="100%" viewBox="0 0 1100 540" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AgentOS Stage 14 Dual Desktop UI mockup</title>
+<desc>Dual-pane operating system mockup showing classical user desktop on the left and live Agent Desktop on the right with active sandboxes, AgentLang decoder, and reasoning trace</desc>
+<defs>
+<style>
+.t-primary { fill: #2C2C2A; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.t-secondary { fill: #5F5E5A; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.t-tertiary { fill: #888780; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.t-mono { fill: #5F5E5A; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.t-mono-primary { fill: #2C2C2A; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.t-purple { fill: #534AB7; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+.t-purple-mono { fill: #534AB7; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.t-green { fill: #1D9E75; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+.t-amber { fill: #BA7517; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+@media (prefers-color-scheme: dark) {
+.t-primary { fill: #F1EFE8; }
+.t-secondary { fill: #D3D1C7; }
+.t-tertiary { fill: #888780; }
+.t-mono { fill: #D3D1C7; }
+.t-mono-primary { fill: #F1EFE8; }
+.t-purple { fill: #AFA9EC; }
+.t-purple-mono { fill: #AFA9EC; }
+.t-green { fill: #5DCAA5; }
+.t-amber { fill: #EF9F27; }
+}
+.surface-primary { fill: #FFFFFF; }
+.surface-secondary { fill: #F1EFE8; }
+.surface-tertiary { fill: #E8E6DD; }
+.border-line { stroke: rgba(44, 44, 42, 0.15); }
+@media (prefers-color-scheme: dark) {
+.surface-primary { fill: #1F1F1D; }
+.surface-secondary { fill: #2C2C2A; }
+.surface-tertiary { fill: #252523; }
+.border-line { stroke: rgba(241, 239, 232, 0.15); }
+}
+</style>
+</defs>
+<rect x="0" y="0" width="1100" height="540" class="surface-secondary"/>
+<rect x="20" y="20" width="1060" height="500" rx="12" class="surface-primary" stroke="rgba(0,0,0,0.05)" stroke-width="0.5"/>
+<rect x="20" y="20" width="1060" height="40" rx="12" class="surface-tertiary"/>
+<rect x="20" y="48" width="1060" height="12" class="surface-tertiary"/>
+<line x1="20" y1="60" x2="1080" y2="60" class="border-line" stroke-width="0.5"/>
+<circle cx="38" cy="40" r="5.5" fill="#B4B2A9"/>
+<circle cx="54" cy="40" r="5.5" fill="#B4B2A9"/>
+<circle cx="70" cy="40" r="5.5" fill="#B4B2A9"/>
+<text class="t-primary" x="92" y="44" style="font-size: 13px; font-weight: 500; letter-spacing: -0.3px;">AgentOS</text>
+<circle cx="380" cy="40" r="3" fill="#639922"/>
+<text class="t-secondary" x="390" y="44" style="font-size: 11px;">Boot-LLM 47 tok/s</text>
+<text class="t-secondary" x="540" y="44" style="font-size: 11px;">3 sandboxes active</text>
+<text class="t-secondary" x="690" y="44" style="font-size: 11px;">Validator 100% pass</text>
+<text class="t-secondary" x="840" y="44" style="font-size: 11px;">RAM 2.4 / 16 GiB</text>
+<text class="t-tertiary" x="1050" y="44" style="font-size: 11px;" text-anchor="end">14:23</text>
+<text class="t-tertiary" x="36" y="78" style="font-size: 10px; letter-spacing: 1px; font-weight: 500;">CLASSICAL USER DESKTOP</text>
+<line x1="20" y1="86" x2="656" y2="86" class="border-line" stroke-width="0.5"/>
+<line x1="656" y1="60" x2="656" y2="500" class="border-line" stroke-width="0.5"/>
+<rect x="36" y="100" width="60" height="380" rx="8" class="surface-primary" stroke="rgba(0,0,0,0.05)" stroke-width="0.5"/>
+<line x1="96" y1="100" x2="96" y2="480" class="border-line" stroke-width="0.5"/>
+<rect x="48" y="116" width="36" height="36" rx="8" class="surface-secondary" stroke="rgba(44,44,42,0.15)" stroke-width="0.5"/>
+<rect x="54" y="124" width="24" height="20" rx="2" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<line x1="54" y1="130" x2="78" y2="130" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="48" y="166" width="36" height="36" rx="8" class="surface-secondary" stroke="rgba(44,44,42,0.15)" stroke-width="0.5"/>
+<rect x="56" y="174" width="9" height="9" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="69" y="174" width="9" height="9" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="56" y="187" width="9" height="9" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="69" y="187" width="9" height="9" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="48" y="216" width="36" height="36" rx="8" class="surface-secondary" stroke="rgba(44,44,42,0.15)" stroke-width="0.5"/>
+<circle cx="66" cy="234" r="11" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<line x1="66" y1="223" x2="66" y2="245" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="48" y="266" width="36" height="36" rx="8" class="surface-secondary" stroke="rgba(44,44,42,0.15)" stroke-width="0.5"/>
+<polyline points="56,290 64,280 70,285 78,275" fill="none" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="120" y="116" width="510" height="220" rx="8" class="surface-primary" stroke="rgba(44,44,42,0.3)" stroke-width="0.5"/>
+<rect x="120" y="116" width="510" height="32" rx="8" class="surface-tertiary"/>
+<rect x="120" y="140" width="510" height="8" class="surface-tertiary"/>
+<line x1="120" y1="148" x2="630" y2="148" class="border-line" stroke-width="0.5"/>
+<circle cx="134" cy="132" r="3.5" fill="#D85A30"/>
+<circle cx="146" cy="132" r="3.5" fill="#EF9F27"/>
+<circle cx="158" cy="132" r="3.5" fill="#97C459"/>
+<text class="t-primary" x="174" y="136" style="font-size: 11px; font-weight: 500;">research_notes.md</text>
+<text class="t-mono-primary" x="138" y="174" style="font-size: 11px; font-weight: 500;"># Notes on agent throughput</text>
+<text class="t-mono" x="138" y="194" style="font-size: 11px;">Ring-0 inference reduces context-switch overhead by ~94%</text>
+<text class="t-mono" x="138" y="212" style="font-size: 11px;">compared to user-space inference servers. The validator</text>
+<text class="t-mono" x="138" y="230" style="font-size: 11px;">gates every agent operation in </text>
+<text class="t-green" x="316" y="230" style="font-size: 11px; font-family: ui-monospace, monospace;">O(1)</text>
+<text class="t-mono" x="345" y="230" style="font-size: 11px;"> against capability tables.</text>
+<text class="t-mono" x="138" y="258" style="font-size: 11px; opacity: 0.7;">## Open questions</text>
+<text class="t-mono" x="138" y="278" style="font-size: 11px;">- Token throughput at 16-agent concurrency?</text>
+<text class="t-mono" x="138" y="296" style="font-size: 11px;">- Memory bandwidth ceiling on Apple Silicon?</text>
+<rect x="382" y="287" width="1.5" height="12" class="t-mono-primary" style="fill: currentColor;"/>
+<rect x="120" y="350" width="510" height="40" rx="8" class="surface-secondary"/>
+<text class="t-primary" x="138" y="375" style="font-size: 11px; font-weight: 500;">Files</text>
+<text class="t-secondary" x="180" y="375" style="font-size: 11px;">research_notes.md</text>
+<text class="t-tertiary" x="290" y="375" style="font-size: 11px;">deck-v3.pdf</text>
+<text class="t-tertiary" x="370" y="375" style="font-size: 11px;">benchmarks.csv</text>
+<rect x="656" y="60" width="424" height="426" class="surface-tertiary"/>
+<text class="t-tertiary" x="672" y="78" style="font-size: 10px; letter-spacing: 1px; font-weight: 500;">AGENT DESKTOP</text>
+<circle cx="1052" cy="74" r="3" fill="#639922"/>
+<text class="t-green" x="1060" y="78" style="font-size: 9px;">LIVE</text>
+<line x1="656" y1="86" x2="1080" y2="86" class="border-line" stroke-width="0.5"/>
+<rect x="672" y="100" width="392" height="100" rx="8" class="surface-primary" stroke="rgba(0,0,0,0.08)" stroke-width="0.5"/>
+<text class="t-tertiary" x="688" y="120" style="font-size: 10px; letter-spacing: 0.5px; font-weight: 500;">ACTIVE SANDBOXES</text>
+<circle cx="694" cy="142" r="3.5" fill="#1D9E75"/>
+<text class="t-primary" x="706" y="146" style="font-size: 11px;">research_agent</text>
+<text class="t-tertiary" x="1048" y="146" style="font-size: 10px; font-variant-numeric: tabular-nums;" text-anchor="end">42 ops/s</text>
+<circle cx="694" cy="164" r="3.5" fill="#1D9E75"/>
+<text class="t-primary" x="706" y="168" style="font-size: 11px;">code_writer</text>
+<text class="t-tertiary" x="1048" y="168" style="font-size: 10px; font-variant-numeric: tabular-nums;" text-anchor="end">8 ops/s</text>
+<circle cx="694" cy="186" r="3.5" fill="#EF9F27"/>
+<text class="t-primary" x="706" y="190" style="font-size: 11px;">file_indexer</text>
+<text class="t-tertiary" x="1048" y="190" style="font-size: 10px;" text-anchor="end">paused</text>
+<rect x="672" y="214" width="392" height="148" rx="8" class="surface-primary" stroke="rgba(0,0,0,0.08)" stroke-width="0.5"/>
+<text class="t-tertiary" x="688" y="234" style="font-size: 10px; letter-spacing: 0.5px; font-weight: 500;">AGENTLANG DECODER</text>
+<text class="t-purple" x="1048" y="234" style="font-size: 10px;" text-anchor="end">research_agent</text>
+<rect x="688" y="244" width="360" height="60" rx="4" class="surface-secondary"/>
+<text class="t-purple-mono" x="700" y="262" style="font-size: 10px;">(intent</text>
+<text class="t-mono" x="744" y="262" style="font-size: 10px;">fileSystem read</text>
+<text class="t-mono" x="712" y="278" style="font-size: 10px;">"/notes/research_notes.md"</text>
+<text class="t-mono" x="712" y="294" style="font-size: 10px;">handle@7</text>
+<text class="t-purple-mono" x="760" y="294" style="font-size: 10px;">)</text>
+<line x1="688" y1="320" x2="1048" y2="320" class="border-line" stroke-width="0.5"/>
+<text class="t-primary" x="688" y="340" style="font-size: 11px;">Agent requests: read </text>
+<text class="t-purple" x="816" y="340" style="font-size: 11px;">research_notes.md</text>
+<text class="t-primary" x="924" y="340" style="font-size: 11px;">, store in handle 7</text>
+<rect x="672" y="376" width="392" height="98" rx="8" class="surface-primary" stroke="rgba(0,0,0,0.08)" stroke-width="0.5"/>
+<text class="t-tertiary" x="688" y="396" style="font-size: 10px; letter-spacing: 0.5px; font-weight: 500;">REASONING TRACE</text>
+<text class="t-tertiary" x="688" y="416" style="font-size: 10px;">14:22:58</text>
+<text class="t-secondary" x="744" y="416" style="font-size: 10px;">evaluating user query intent</text>
+<text class="t-tertiary" x="688" y="434" style="font-size: 10px;">14:22:59</text>
+<text class="t-secondary" x="744" y="434" style="font-size: 10px;">selected tool: fileSystem.read</text>
+<text class="t-tertiary" x="688" y="452" style="font-size: 10px;">14:23:00</text>
+<text class="t-secondary" x="744" y="452" style="font-size: 10px;">validator: </text>
+<text class="t-green" x="800" y="452" style="font-size: 10px;">approved</text>
+<text class="t-tertiary" x="688" y="470" style="font-size: 10px;">14:23:00</text>
+<text class="t-secondary" x="744" y="470" style="font-size: 10px;">executing</text>
+<rect x="788" y="461" width="1.5" height="11" fill="#2C2C2A"/>
+<line x1="20" y1="486" x2="1080" y2="486" class="border-line" stroke-width="0.5"/>
+<rect x="20" y="486" width="1060" height="34" class="surface-tertiary"/>
+<rect x="20" y="508" width="1060" height="12" rx="0" class="surface-tertiary"/>
+<text class="t-tertiary" x="36" y="506" style="font-size: 10px;">Stage 14 — Dual Desktop UI · Phase 7 · Mockup</text>
+<text class="t-tertiary" x="1050" y="506" style="font-size: 10px;" text-anchor="end">v0.14.0 (forthcoming)</text>
+</svg>

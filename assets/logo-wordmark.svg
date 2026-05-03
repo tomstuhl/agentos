@@ -1,0 +1,16 @@
+<svg width="100%" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AgentOS wordmark</title>
+<desc>AgentOS wordmark logo with tagline</desc>
+<defs>
+<style>
+.t-primary { fill: #2C2C2A; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.t-muted { fill: #888780; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+@media (prefers-color-scheme: dark) {
+.t-primary { fill: #F1EFE8; }
+.t-muted { fill: #888780; }
+}
+</style>
+</defs>
+<text class="t-primary" x="40" y="100" style="font-size: 64px; font-weight: 500; letter-spacing: -2px;">AgentOS</text>
+<text class="t-muted" x="40" y="140" style="font-size: 16px;">— the operating system of the AI era</text>
+</svg>

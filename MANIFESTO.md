@@ -114,63 +114,52 @@ AgentOS is built on technologies that exist nowhere else in this combination:
 
 **HAL with Native Idioms** — One canonical top-level API. Native implementations per platform. x86_64 uses PML4, GDT, IDT, PIC. aarch64 uses TTBR1, GIC, Generic Timer, PL011. Same architectural principle, native mechanics.
 
-Every one of these technologies is shipped. Every one is reproducible — under selective access — for qualified partners.
+Every one of these technologies is shipped. Every one is documented. Every one is reproducible — under selective access — for qualified partners.
 
 ---
 
 ## What We Are Not
 
-We are not trying to replace Linux for general-purpose workloads. Linux runs as a **guest VM** inside AgentOS when users want it.
+We are not trying to replace any general-purpose OS for general-purpose workloads. Existing operating systems can run as **guest VMs** inside AgentOS when users want them.
 
 We are not POSIX-compatible. POSIX is the standardization of the 1976 architecture we are leaving behind.
 
-We are not a consumer-breadth competitor to macOS or Windows on day one. Adoption is staged: developers and AI builders first, regulated enterprises next, mass-market when the desktop layer matures.
+We are not a consumer-breadth platform on day one. Adoption is staged: developers and AI builders first, regulated enterprises next, mass-market when the desktop layer matures.
 
-We are not opt-out on data sharing. The default is private. Always. Federated learning is the privacy-first option throughout. **GDPR compliance is structural, not bolted-on.**
+We are not opt-out on data sharing. The default is private. Always. **GDPR compliance is structural, not bolted-on.**
 
 We are not vaporware. **The demo runs.** The code compiles. The discipline is documented.
 
 ---
 
-## The Open-Core Foundation
+## Free for Everyone
 
-AgentOS is **AGPLv3**. The kernel, the inference engine, the validator, the AOT compiler, the HAL — all open source. Forever.
+AgentOS is **AGPLv3**. The kernel, the inference engine, the validator, the AOT compiler, the HAL — all open source. **Forever.**
 
 We chose AGPLv3 deliberately. It is the strongest copyleft license that protects the integrity of the open foundation against extractive cloud-providers who would take without giving back.
 
-The open-core foundation is not a limitation on our commercial strategy. It is the **engine** of it.
+There are two editions of AgentOS, both free, both AGPLv3:
+
+- **AgentOS Basic** — for the everyday citizen. Pre-configured, ready to run.
+- **AgentOS Hardcore** — for builders and hackers. Stripped-down, build your own.
+
+Same kernel. Same Validator. Same AgentLang. Different out-of-the-box experience.
+
+The kernel is free, and stays free.
 
 ---
 
-## The Commercial Future
+## How AgentOS Sustains Itself
 
-On top of the AGPLv3 foundation, AgentOS will support three commercial paths:
+Open source needs to eat. We sustain the free kernel through optional editions and services for those who need more than the open foundation provides:
 
-### Enterprise Edition — For When Compliance Is Not Optional
+- **AgentOSLLM Pro** — premium intelligence as an optional drop-in upgrade for the local Ring-0 LLM. For power users.
+- **Certified Editions** — compliance-ready builds for hospitals, government, defense, and KRITIS infrastructure operators. For regulated industries where compliance is structural, not aspirational.
+- **AgentOSLLM Cloud** — sovereign cloud reasoning when local isn't enough. Frontier-scale intelligence on your terms. For heavy workloads.
 
-Hospitals, government agencies, defense contractors, financial institutions — organizations whose data cannot leave the building, whose AI workloads cannot touch the cloud, whose compliance burden is structural rather than aspirational.
+These editions and services exist so we can keep the kernel free for everyone else — and so the people who need more, get more.
 
-AgentOS Enterprise Edition delivers the full AgentOS stack with **on-premises deployment, audit logging, capability-policy enforcement, sealed data plane, and certified hardware integration**.
-
-The hospital's patient records stay on the hospital's hardware. The agents run on the hospital's hardware. The LLM runs on the hospital's hardware. **No data leaves the perimeter. Ever.**
-
-For KRITIS infrastructure operators in Germany and the EU, this is not a feature — it is a **legal requirement**. AgentOS Enterprise Edition makes compliance the default path, not the burden.
-
-### Hybrid LLM — Local Sovereignty Plus Cloud Reasoning
-
-The Ring-0 Boot-LLM is fast, sovereign, and always-available. But certain workloads need more horsepower than fits in a 1.7B parameter model.
-
-**AgentOSLLM Hybrid** combines the local Ring-0 LLM with a server-side **Cloud Brain** — a fine-tuned orchestration model that augments local inference with cross-session reasoning, multi-agent coordination, and access to specialized larger models.
-
-The local model decides when cloud reasoning is worth the round-trip. Sensitive context stays local. Aggregate reasoning happens in the cloud. The user gets the best of both architectures.
-
-### AgentOSLLM v2 — The First Architecturally GDPR-Compliant Foundation Model
-
-The next generation of AgentOSLLM is trained on **opt-in user data with full consent**, anonymized on-device, federated learning by default.
-
-**Federated by design** means: training gradients are computed locally, on the user's hardware, in the user's AgentOS instance. Only aggregated gradients — never raw data — are shared. The cloud trains the model from gradients. The user retains every byte of their data, forever.
-
-This is the first foundation model where **GDPR/CCPA compliance is architectural, not policy-bolted-on**.
+Partnership inquiries: **Tom.Stuhl@nefesh.ai**.
 
 ---
 
@@ -206,7 +195,7 @@ This is **engineering discipline applied at every milestone**, documented at eve
 
 The full architectural specification, ADRs, and Lessons-Learned exist as our internal proof-of-work. **Selective access for qualified developers, investors, and enterprise partners** is granted on request.
 
-We do not build fast. We build **correctly**. The OS that comes after Linux deserves the discipline that built Linux, applied with the rigor of the AI era.
+We do not build fast. We build **correctly**. The OS that comes after the legacy stack deserves the discipline that built that stack, applied with the rigor of the AI era.
 
 ---
 
@@ -216,7 +205,7 @@ We do not build fast. We build **correctly**. The OS that comes after Linux dese
 
 **If you invest:** email Tom.Stuhl@nefesh.ai. We are pre-seed. We know exactly what we are building. We know exactly what the moats are. We know exactly which markets fund which capabilities. The deck is the code.
 
-**If you lead a regulated organization:** AgentOS Enterprise Edition is being designed for you. Email us. We want your requirements informing the architecture from the ground up, not retrofitted later.
+**If you lead a regulated organization:** AgentOS Certified Editions are being designed for you. Email us. We want your requirements informing the architecture from the ground up, not retrofitted later.
 
 **If you write about technology:** the demo runs. Email Tom.Stuhl@nefesh.ai for technical briefings, demo access, and architectural review materials. **There is nothing to take on faith — but access is selective.**
 
@@ -246,4 +235,4 @@ The north star is clear. The discipline is documented. The code is alive.
 
 ---
 
-💼 [Contact](mailto:Tom.Stuhl@nefesh.ai)
+[Contact](mailto:Tom.Stuhl@nefesh.ai)
