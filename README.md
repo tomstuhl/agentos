@@ -18,6 +18,14 @@
 
 ---
 
+## 🔓 AgentOS is Open Source
+
+> The full source code of the kernel will be published to this repository under the **AGPLv3** license. Until then, early source access is restricted to select **design partners and core contributors**.
+>
+> If you want to be among the first to see the code: email **Tom.Stuhl@nefesh.ai**.
+
+---
+
 ## Why This Matters
 
 For 50 years, operating systems have been built for **humans typing into terminals**.
